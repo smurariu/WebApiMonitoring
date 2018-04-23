@@ -18,18 +18,16 @@ namespace WebApiMonitoring
 
         public async Task Invoke(HttpContext context)
         {
-            _logger.LogInformation("Incoming request: {@Method}, {@Path}, {@Headers}, {@ContentLength}",
+            _logger.LogInformation("Incoming request: {@Method}, {@Path}, {@Headers}",
                 context.Request.Method,
                 context.Request.Path,
-                context.Request.Headers,
-                context.Request.ContentLength);
+                context.Request.Headers);
 
             await _next.Invoke(context);
 
-            _logger.LogInformation("Outgoing response: {@StatusCode}, {@Headers}, {@ContentLength}",
+            _logger.LogInformation("Outgoing response: {@StatusCode}, {@Headers}",
                 context.Response.StatusCode,
-                context.Response.Headers,
-                context.Response.ContentLength);
+                context.Response.Headers);
         }
     }
 

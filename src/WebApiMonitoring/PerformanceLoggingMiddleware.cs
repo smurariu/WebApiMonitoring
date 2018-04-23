@@ -23,7 +23,7 @@ namespace WebApiMonitoring
             await _next.Invoke(context);
             stopwatch.Stop();
 
-            _logger.LogInformation("Request: {@Method} {@Path} served in {ElapsedMilliseconds}ms from {MachineName}",
+            _logger.LogInformation("Request: {Method} {Path} served in {ElapsedMilliseconds}ms from {MachineName}",
                 context.Request.Method,
                 context.Request.Path,
                 stopwatch.ElapsedMilliseconds,

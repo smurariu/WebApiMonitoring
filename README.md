@@ -1,4 +1,4 @@
-# WebApiMonitoring
+# WebApi.Monitoring
 
 Middleware for monitoring ASP.NET Core WebApis.
 

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace WebApiMonitoring
+namespace WebApi.Monitoring
 {
     public class CorrelationTokenMiddleware
     {

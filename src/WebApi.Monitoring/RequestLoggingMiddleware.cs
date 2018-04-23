@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace WebApiMonitoring
+namespace WebApi.Monitoring
 {
     public class RequestLoggingMiddleware
     {

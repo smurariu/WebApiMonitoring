@@ -13,6 +13,6 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\WebApiMonitoring\WebApiMonitoring.csproj" />
+    <ProjectReference Include="..\..\WebApi.Monitoring\WebApi.Monitoring.csproj" />
   </ItemGroup>
 </Project>

@@ -2,6 +2,8 @@
 
 Middleware for monitoring ASP.NET Core WebApis.
 
+Build status: [![smurariu MyGet Build Status](https://www.myget.org/BuildSource/Badge/smurariu?identifier=7855be57-4337-4145-9a98-458f014ccd9d)](https://www.myget.org/)
+
 # Correlation Token
 
 Adds ```"correlationToken"``` guid  to the headers of incoming requests in order to facilitate requests tracking across various WebApis. If a ```"correlationToken"``` guid is already present in the headers of incoming requests it is reused for the current request.
